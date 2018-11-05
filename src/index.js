@@ -7,7 +7,6 @@ console.ignoredYellowBox = ['Warning: Each', 'Warning:', 'Possible Unhandled', '
 
 class App extends Component {
   state = { openedUpdateAlert: false }
-
   render() {
     return (
       <Provider>
@@ -18,5 +17,4 @@ class App extends Component {
     );
   }
 }
-
 export default App
