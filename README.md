@@ -26,6 +26,8 @@
     │   └── ...                 
     └── ...
 
+# Installation
+
 ```bash
 git clone https://github.com/matheusgveras/react-native-starter-kit.git my-app-name
 $ cd my-app-name
