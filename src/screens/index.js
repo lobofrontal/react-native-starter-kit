@@ -7,7 +7,7 @@ const RootStack = StackNavigator({
     Welcome: { screen: Welcome }
 }, {
   initialRouteName: 'Welcome',
-  navigationOptions: { header: false }
+  navigationOptions: { header: null }
 }
 );
 export default RootStack;

@@ -6,7 +6,7 @@ import styles from './styles';
 const Page = ({ background, children, style, statusBarStyle, statusBarColor, barStyle, loading, ...props }) => (
   <View style={styles.container} {...props} >
     <View>
-      <StatusBar barStyle={barStyle || 'dark-content'} backgroundColor={'#000000'} />
+      <StatusBar barStyle={barStyle || 'dark-content'} backgroundColor={'#ED130A'} />
     </View>
     {children}
   </View>
