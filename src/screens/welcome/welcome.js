@@ -1,14 +1,21 @@
-// Core
+// Import core
 import React, { Component } from 'react';
-import { Page } from '../../components';
-import styles from './styles';
-import { FadeUp, FadeDown } from '../../tools';
 import { connect } from 'react-redux';
+import { Text, Image, View } from 'react-native';
 
-import {
-    Text,
-  } from 'react-native';
+// Import code
+import { Page } from '../../components';
+import { FadeUp, FadeDown } from '../../tools';
+
+// Import assets
+import logoHeader from '../../assets/image/logo-header.png';
+import logoBottom from '../../assets/image/logo-bottom.png';
+
+// Import Style
+import styles from './styles';
+
 class Welcome extends Component {
+
   componentDidMount = () => {
     setTimeout(() => this.props.setInit(true), 200);
   };
@@ -16,16 +23,19 @@ class Welcome extends Component {
   render() {
     return (
       <Page style={styles.container}>
-        <FadeUp pose={this.props.init ? 'visible' : 'hidden'}>
-          <Text>Hello World</Text>
-        </FadeUp>
-        <FadeDown pose={this.props.init ? 'visible' : 'hidden'}>
-          <Text>Exemplo FadeDow</Text>
-        </FadeDown>
+        <View style={styles.centerContent} >
+          <FadeUp pose={this.props.init ? 'visible' : 'hidden'}>
+            <Image style={styles.logoHeaderSize} source={logoHeader} />
+          </FadeUp>
+          <FadeDown pose={this.props.init ? 'visible' : 'hidden'}>
+            <Image style={styles.logoBottomSize} source={logoBottom} />
+          </FadeDown>
+        </View>
       </Page>
     );
   }
 }
+
 const mapStateToProps = ({ initial, global }) => ({
   init: initial.init,
 });
