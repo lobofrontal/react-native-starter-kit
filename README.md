@@ -1,5 +1,4 @@
 # React Native Starter Kit 
-
     .
     ├── ...
     ├── android   
