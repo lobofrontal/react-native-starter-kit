@@ -12,8 +12,10 @@
             ├── welcome        # Tela inicial / Init screen
             ├── tutorial       # Tela tutorial / Step By Step screen
             ├── login          # Tela login / Login screen
-            ├── logged-area    # Pastas de tela com acesso restrito / Restrict area
+            ├── logged-area    # Pastas com acesso restrito / Restrict Area
+                ├── dashboard  # Conteúdo restrito / Restricted Content 
     │   ├── tools              # Ferramentas / Helpers
-            ├── animeted       # Animções diversas / Various Animations helpers    
+            ├── animeted       # Animções diversas / Animations helpers    
     │   └── ...                 
     └── ...
+
