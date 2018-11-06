@@ -4,10 +4,10 @@ import { StackNavigator } from 'react-navigation';
 import Welcome from './welcome';
 // RootStack
 const RootStack = StackNavigator({
-    Welcome: { screen: Welcome }
+  Welcome: { screen: Welcome }
 }, {
-  initialRouteName: 'Welcome',
-  navigationOptions: { header: null }
-}
+    initialRouteName: 'Welcome',
+    navigationOptions: { header: null }
+  }
 );
 export default RootStack;

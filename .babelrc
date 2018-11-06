@@ -1,15 +1,31 @@
 {
-  "presets": ["react-native"],
+  "presets": [
+    "react-native",
+    "@babel/preset-flow"
+  ],
   "plugins": [
     [
       "module-resolver",
       {
         "cwd": "babelrc",
-        "root": ["./src"],
-        "extensions": [".js", ".ios.js", ".android.js"]
+        "root": [
+          "./src"
+        ],
+        "extensions": [
+          ".js",
+          ".ios.js",
+          ".android.js"
+        ]
       }
     ],
     "jsx-control-statements",
-    "transform-decorators-legacy"
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
+    ],
+    ["@babel/plugin-syntax-dynamic-import"],
+    ["@babel/plugin-proposal-optional-chaining"]
   ]
 }
