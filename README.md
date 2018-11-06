@@ -2,7 +2,10 @@
     .
     ├── ...
     ├── android   
-    ├── ios   
+    ├── ios
+    ├── resources
+        ├── android                     # Icones e Telas de abertura / Icons & SplashScreens
+        ├── iOS                         # Icones e Telas de abertura / Icons & SplashScreens  
     ├── src
     │   ├── assets                      # Recursos de design / Design 
     |       ├── image                   # Imagens / Images
@@ -23,5 +26,13 @@
     │   └── ...                 
     └── ...
 
+```bash
+git clone https://github.com/matheusgveras/react-native-starter-kit.git my-app-name
+$ cd my-app-name
+$ yarn
+$ yarn rename "RealAppName" com.yourcompany.realappname
+$ yarn start
+$ react-native run-ios or react-native run-android 
+```
 
 ![](https://media.giphy.com/media/xT8qBq71uHPGIR9S2A/giphy.gif)
